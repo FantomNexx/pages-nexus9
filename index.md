@@ -30,7 +30,7 @@ Should show something like this:
 ```HT51GWV00231    fastboot```
 
 Run command in cmd:
-``fastboot oem unlock```
+```fastboot oem unlock```
 
 Confirm operation on the device.
 Restart device after that.
