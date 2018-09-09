@@ -1,37 +1,48 @@
-## Welcome to GitHub Pages
+# Root Nexus 9 devices
 
-You can use the [editor on GitHub](https://github.com/FantomNexx/pages-nexus9/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## Prerequisites 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Android Studio
+It is required to have adb tool and usb drivers.
 
-### Markdown
+## Unlock OEM
+Go to adb.exe location.
+Run command in cmd:
+```cd /d D:\android\sdk\platform-tools```
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Run command in cmd to see attached devices:
+```adb devices```
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+Should show something like this:
+```
+List of devices attached
+HT51GWV00231    device
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Run command in cmd:
+```adb reboot bootloader```
 
-### Jekyll Themes
+After the device switches to the boot mode
+Run command in cmd:
+```fastboot devices```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/FantomNexx/pages-nexus9/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Should show something like this:
+```HT51GWV00231    fastboot```
 
-### Support or Contact
+Run command in cmd:
+``fastboot oem unlock```
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Confirm operation on the device.
+Restart device after that.
+
+## Root device
+Switch device to the fastboot mode.
+```fastboot boot```
+
+Get files for rooting and run next commands
+```fastboot boot inject.img```
+```fastboot flash boot patched.img```
+
+
+
+
