@@ -7,8 +7,6 @@ It is required to have adb tool and usb drivers.
 
 
 ### Clear cache partion
-It is required to have adb tool and usb drivers.
-
 To clear the system cache you’ll need to power off your Nexus, then:
 * Press and hold Volume Down and Power simultaneously until you see the boot screen.
 * Use Volume Down to navigate to Recovery Mode.
