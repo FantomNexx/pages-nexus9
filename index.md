@@ -5,6 +5,21 @@
 ### Android Studio
 It is required to have adb tool and usb drivers.
 
+
+### Clear cache partion
+It is required to have adb tool and usb drivers.
+
+To clear the system cache you’ll need to power off your Nexus, then:
+* Press and hold Volume Down and Power simultaneously until you see the boot screen.
+* Use Volume Down to navigate to Recovery Mode.
+* Press Power to confirm.
+* Wait until you see the Android robot then hold down Power. Press and release Volume Up.
+* Navigate with Volume Down to the Wipe Cache Partition option.
+* Press Power to select.
+* Use Volume Down to highlight the Yes option.
+* Press Power to select.
+* Press Power to reboot your Nexus.
+
 ## Unlock OEM
 Go to adb.exe location.
 Run command in cmd:
